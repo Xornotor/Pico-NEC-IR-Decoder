@@ -7,12 +7,13 @@ const uint IR = 22;
 int cont = 0;
 
 bool read_pulse_cb(struct repeating_timer *t){
-    IR_READ = gpio_get(IR);
+    bool IR_READ = gpio_get(IR);
     if(IR_READ)
         cont = 0;
     else
         cont++;
-    printf("%d\n", cont);
+    if(cont > 0)
+        printf("%d\n", cont);
     return true;
 }
 
