@@ -1,2 +1,5 @@
 # Pico-NEC-IR-Decoder
-Decoder for NEC 16-Bit Protocol-based IR Remote Controller for Raspberry Pi Pico.
+
+Decodificador para controles remotos baseados em protocolo NEC 8-Bits.
+
+Funcionando com controle da Robocore.
