@@ -55,6 +55,6 @@ int main(){
     gpio_set_dir(IR, GPIO_IN);
     gpio_put(LED, 1);
     struct repeating_timer read_timer;
-    add_repeating_timer_us(-525, read_pulse_cb, NULL, &read_timer);
+    add_repeating_timer_us(-526, read_pulse_cb, NULL, &read_timer);
     while(true);
 }
